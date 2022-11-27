@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- BOOTSTRAP MIN CSS -->
+   <link rel="stylesheet" href="style/bootstrap.css" />
+   <!-- MAIN CSS -->
+   <link rel="stylesheet" href="style/style.css" />
+
+   <title>Lesson 1,2,3,4</title>
+</head>
+
+<body class="bg-dark">
+   <header class="bg-black ">
+      <div class="container">
+         <nav class="nav p-3">
+            <img src="logo.jpg" class="nav__logo col-md-4 col-ms-12 col-lg-2 text-white">
+            <h1 class="mart col-md-4 col-sm-12 col-lg-2 text-red pointer">TB</h1>
+            <h1 class="mart col-md-4 col-sm-12 col-lg-2 text-red pointer">Кинотеатр</h1>
+            <h1 class="mart col-md-4 col-sm-12 col-lg-2 text-red pointer">Радио</h1>
+            <h1 class="mart col-md-4 col-sm-12 col-lg-2 text-red pointer">Я смотрю</h1>
+         </nav>
+      </div>
+   </header>
+
+   <main>
+      <div class="modal-window modal-hide">
+         <button type="button" class="btn btn-close d-md-block m-4 bg-danger" aria-label="Close"></button>
+         <div class="modal-container ">
+
+         </div>
+      </div>
+
+      <section>
+         <div class="">
+            <div class="row">
+               <div class="col-md-3 p-3 bg-secondary ps-5">
+                  <form action="#" id="submitForm">
+                     <label for="filmName" class="w-75 my-2 w-100 fs-5">
+                        <strong class="text-warning">Enter film name</strong>
+                        <input type="text" class="form-control p-3" placeholder="Enter" id="filmName">
+                     </label>
+                     <label for="filmRating" class="w-75 w-100 my-2 fs-5">
+                        <strong class="text-warning">Enter film rating</strong>
+                        <input type="number" min="1" max="10" class="form-control p-3" placeholder="Enter"
+                           id="filmRating">
+                     </label>
+
+                     <h4 class="text-warning">Select film category</h4>
+                     <select id="category" class="form-select w-100 my-3 w-75 p-3">
+                        <option value="all" selected disabled>Select </option>
+                     </select>
+
+                     <button type="submit" class="btn w-100 btn-warning search w-75 p-3">
+                        SEARCH
+                     </button>
+
+                  </form>
+
+                  <div class="card w-100 my-3 p-3 shadow text-center bg-light">
+                     <h4 class="text-success"><strong class="res">100</strong> ta<br>m'alumot topildi</h4>
+                  </div>
+
+                  <div class="card d-none card-res w-75 my-3 p-3 shadow bg-light">
+                     <h4 class="text-success" id="res"> </h4>
+                  </div>
+               </div>
+
+               <div class="col-md-7 p-3 bg-secondary m-2 ">
+
+                  <div class="wrapper">
+
+                  </div>
+
+               </div>
+               <div class="col p-3 bg-secondary m-2">
+
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+</body>
+<script src="js/motereals.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/main.js"></script>
+
+</html>
