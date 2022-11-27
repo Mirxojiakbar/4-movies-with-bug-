@@ -317,7 +317,7 @@ $(".wrapper").addEventListener("click", (e) => {
        alert('avval qo\'shilgan')
     }
  
-    // const inLocal = localStorage.setItem('bookmark', JSON.stringify(bookmark))
-    // const take = localStorage.getItem(JSON.stringify(bookmark))
-    // console.log(take);
+    localStorage.setItem('bookmark', JSON.stringify(bookmark))
+    const take = localStorage.getItem('bookmark')
+    console.log(take);
  }
